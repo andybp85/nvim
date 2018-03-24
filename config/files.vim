@@ -15,10 +15,9 @@
 " }}}}
 
 " FZF {{{{
-  nmap <Leader>b :Buffers<CR>
-  nmap <Leader>t :Files<CR>
-  nmap <Leader>r :Tags<CR>
-
+    nmap <Leader>b :Buffers<CR>
+    nmap <Leader>t :Files<CR>
+    nmap <Leader>r :Tags<CR>
 " }}}}
 
 " fix up netrw {{{{
@@ -35,3 +34,6 @@
 " rooter {{{{
     let g:rooter_silent_chdir = 1
 " }}}}
+
+" Modeline
+" vim:foldmethod=marker:foldlevel=0

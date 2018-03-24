@@ -47,10 +47,25 @@
 " }}}}
 
 " lang-agnostic {{{{
-    call dein#add('Valloric/YouCompleteMe') " BEST PLUGIN EVER. make autocomplete feel like sex
+    call dein#add('Valloric/YouCompleteMe', {'build': './install.py --js-completer --clang-completer'}) " {{{{
+        let g:ycm_global_ycm_extra_conf = '~/.config/nvim/repos/github.com/Valloric/YouCompleteMe/.ycm_extra_conf.py'
+        " let g:ycm_server_python_interpreter = '~/.pyenv/versions/neovim/bin/python'
+        " let g:ycm_python_binary_path = '~/.pyenv/versions/neovim/bin/python'
+
+        " let g:ycm_python_binary_path = '~/.pyenv/versions/3.6.2/bin/python'
+        " let g:ycm_server_python_interpreter = '~/.pyenv/versions/3.6.2/bin/python'
+        let g:ycm_autoclose_preview_window_after_insertion = 1
+        let g:ycm_seed_identifiers_with_syntax = 1
+        let g:ycm_collect_identifiers_from_comments_and_strings = 1
+        let g:ycm_semantic_triggers = {'haskell' : ['.']}
+    " }}}}
     call dein#add('w0rp/ale') " new hotness for linting
     call dein#add('kien/rainbow_parentheses.vim') " matfching parens in dif colors
-    call dein#add('majutsushi/tagbar') " auto-generate index for code files
+    call dein#add('majutsushi/tagbar') " {{{{
+            let g:tagbar_width = 30
+            let g:tagbar_show_linenumbers = 1
+            nmap <leader>T :TagbarToggle<CR>
+        " }}}}
     call dein#add('SirVer/ultisnips') " snippits, integrates with YCM
     call dein#add('honza/vim-snippets') " code for snippets
     call dein#add('severin-lemaignan/vim-minimap')
@@ -64,12 +79,12 @@
         call dein#add('burnettk/vim-angular')
         " call dein#add('alexlafroscia/vim-ember-cli')
         call dein#add('neovim/node-host')
-        call dein#add('bigfish/vim-js-context-coloring')
+        call dein#add('bigfish/vim-js-context-coloring', { 'build': 'npm install' })
         call dein#add('pangloss/vim-javascript')
         call dein#add('mxw/vim-jsx')
         call dein#add('leafgarland/typescript-vim')
         call dein#add('HerringtonDarkholme/yats.vim')
-        call dein#add('Shougo/vimproc.vim')
+        call dein#add('Shougo/vimproc.vim', {'build': 'make'})
         call dein#add('Quramy/tsuquyomi')
         call dein#add('purescript-contrib/purescript-vim')
     " }}}}}
@@ -136,20 +151,5 @@
     endif
 " }}}}
 
-" Plugin Setup {{{
-
-    " YouCompleteMe {{{{
-        let g:ycm_global_ycm_extra_conf = '~/.config/nvim/repos/github.com/Valloric/YouCompleteMe/.ycm_extra_conf.py'
-        let g:ycm_autoclose_preview_window_after_insertion = 1
-        let g:ycm_seed_identifiers_with_syntax = 1
-        let g:ycm_collect_identifiers_from_comments_and_strings = 1
-        let g:ycm_semantic_triggers = {'haskell' : ['.']}
-    " }}}}
-
-    " Tagbar {{{{
-        let g:tagbar_width = 30
-        let g:tagbar_show_linenumbers = 1
-        nmap <leader>T :TagbarToggle<CR>
-    " }}}}
-
-" }}}
+" Modeline
+" vim:foldmethod=marker:foldlevel=0

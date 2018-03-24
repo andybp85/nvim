@@ -30,6 +30,8 @@
     nnoremap <leader>yd :YcmCompleter GetDoc<CR>
     nnoremap <leader>yx :YcmCompleter FixIt<CR>
     nnoremap <leader>yf :YcmCompleter RefactorRename<CR>
+    nnoremap <leader>yg :YcmCompleter GoTo<CR>
+    nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
 " }}}}
 
 " Tbone {{{
@@ -37,7 +39,6 @@
 " }}}
 
 " custom mappings {{{{
-    " F2 to toggle paste mode
     " set pastetoggle=<leader>pp
 
     " whenever you type % you jump to the matching object, and you visually select all the text in between
@@ -48,6 +49,10 @@
 
     " smart insert colon
     inoremap <leader>; <esc>A;
+" }}}}
+
+" indent guides {{{{
+    nmap <silent> <leader>n :IndentGuidesToggle<CR>
 " }}}}
 
 " Folding {{{
@@ -72,3 +77,6 @@
     vnoremap <Space> zf
 
 " }}}
+
+" Modeline
+" vim:foldmethod=marker:foldlevel=0

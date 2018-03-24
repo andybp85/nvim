@@ -27,11 +27,6 @@
     noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 " }}}}
 
-" YCM {{{{
-    nnoremap <leader>yg :YcmCompleter GoTo<CR>
-    nnoremap <leader>yr :YcmCompleter GoToReferences<CR>
-" }}}}
-
 " custom mappings {{{{
     " block keyboard keys in insert mode
     imap <up> <nop>
@@ -47,3 +42,6 @@
 " ag.vim {{{{
     nnoremap <leader>a :Ag<space>
 " }}}}
+
+" Modeline
+" vim:foldmethod=marker:foldlevel=0

@@ -44,3 +44,6 @@
 " minimap {{{{
     let g:minimap_highlight='Visual'
 " }}}}
+
+" Modeline
+" vim:foldmethod=marker:foldlevel=0

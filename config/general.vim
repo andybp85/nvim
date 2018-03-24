@@ -141,3 +141,6 @@
     nmap <silent> <leader>TT :TagbarToggle<CR>
     let g:minimap_toggle='<leader>M'
 " }}}}
+
+" Modeline
+" vim:foldmethod=marker:foldlevel=0
