@@ -121,7 +121,9 @@
     " }}}}}
 
     " Haskell {{{{{
-        call dein#add('parsonsmatt/intero-neovim')
+        call dein#add('parsonsmatt/intero-neovim') " {{{{{
+            let g:intero_use_neomake = 0
+        " }}}}}
         call dein#add('neovimhaskell/haskell-vim')
         call dein#add('alx741/vim-hindent')
     " }}}}}

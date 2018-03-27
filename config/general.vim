@@ -1,5 +1,5 @@
 " vim options {{{{
-    set nocompatible                  " be iMproved, required
+    set nocompatible
     set encoding=utf-8
     set ffs=unix,dos,mac
     set number
