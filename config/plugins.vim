@@ -7,8 +7,8 @@
 " filesystem {{{{
     call dein#add('airblade/vim-rooter')
     " call dein#add('ctrlpvim/ctrlp.vim') " fuzzy file matching
-    call dein#add('junegunn/fzf')
-    call dein#add('junegunn/fzf.vim')
+    call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
+    call dein#add('junegunn/fzf.vim', { 'depends': 'junegunn/fzf' })
     call dein#add('tpope/vim-vinegar') " beef up vim's file browser
     " call dein#add('twe4ked/vim-peepopen')
     " call dein#add('scrooloose/nerdtree')
@@ -49,15 +49,13 @@
 " lang-agnostic {{{{
     call dein#add('Valloric/YouCompleteMe', {'build': './install.py --js-completer --clang-completer'}) " {{{{
         let g:ycm_global_ycm_extra_conf = '~/.config/nvim/repos/github.com/Valloric/YouCompleteMe/.ycm_extra_conf.py'
-        " let g:ycm_server_python_interpreter = '~/.pyenv/versions/neovim/bin/python'
-        " let g:ycm_python_binary_path = '~/.pyenv/versions/neovim/bin/python'
-
-        " let g:ycm_python_binary_path = '~/.pyenv/versions/3.6.2/bin/python'
-        " let g:ycm_server_python_interpreter = '~/.pyenv/versions/3.6.2/bin/python'
         let g:ycm_autoclose_preview_window_after_insertion = 1
         let g:ycm_seed_identifiers_with_syntax = 1
         let g:ycm_collect_identifiers_from_comments_and_strings = 1
         let g:ycm_semantic_triggers = {'haskell' : ['.']}
+"         let g:ycm_server_python_interpreter = $HOME.'/.pyenv/versions/neovim/bin/python'
+"         let g:ycm_server_keep_logfiles = 1
+"         let g:ycm_server_log_level = 'debug'
     " }}}}
     call dein#add('w0rp/ale') " new hotness for linting
     call dein#add('kien/rainbow_parentheses.vim') " matfching parens in dif colors

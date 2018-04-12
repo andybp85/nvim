@@ -10,11 +10,9 @@ My personal turnkey NeoVim setup.
 * a boatload of langs & linters
 
 ### Run:
-*~/.c/nvim ❯❯❯* git clone  
+*~/.config ❯❯❯* git clone https://github.com/andybp85/nvim.git
+*~/.config ❯❯❯* cd nvim
 *~/.c/nvim ❯❯❯* ./setup.zsh
-
-### Installs:
-[dein.vim](https://github.com/Shougo/dein.vim)
 
 ### Misc:
 * This assumes python3 is the default install.
