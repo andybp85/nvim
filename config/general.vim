@@ -23,7 +23,7 @@
     set timeoutlen=1000 ttimeoutlen=0
     " change the mapleader from \ to ,
     let mapleader=" "
-"    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim/bin/python'
+    let g:python3_host_prog = $HOME.'/.pyenv/versions/neovim/bin/python'
 " }}}}
 
 " wildmode {{{{

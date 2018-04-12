@@ -1,18 +1,18 @@
 #!/bin/zsh
 
-# if [[ ! -d $(pyenv root)/plugins/pyenv-virtualenv ]]; then
-#     git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
-# fi
-# 
-# eval "$(pyenv init -)"
-# 
-# if [[ ! -d $HOME/.pyenv/versions/neovim ]]; then
-#   pyenv virtualenv neovim
-# fi
-# pyenv activate neovim
-# pip install --upgrade pip
-# pip install neovim
-# pyenv deactivate
+# python3 must be installed via pyenv with PYTHON_CONFIGURE_OPTS="--enable-framework"
+if [[ ! -d $(pyenv root)/plugins/pyenv-virtualenv ]]; then
+    git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+fi
+
+eval "$(pyenv init -)"
+
+if [[ ! -d $HOME/.pyenv/versions/neovim ]]; then
+  pyenv virtualenv neovim
+fi
+pyenv activate neovim
+pip install --upgrade pip
+pip install neovim
 
 if [[ ! -d $HOME/.config/nvim/repos/github.com/Shougo/dein.vim ]]; then
   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > $HOME/.config/nvim/installer.sh
@@ -27,4 +27,5 @@ fi
 
 nvim +"call dein#install()" +qall
 
+pyenv deactivate
 

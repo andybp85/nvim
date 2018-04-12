@@ -53,7 +53,7 @@
         let g:ycm_seed_identifiers_with_syntax = 1
         let g:ycm_collect_identifiers_from_comments_and_strings = 1
         let g:ycm_semantic_triggers = {'haskell' : ['.']}
-"         let g:ycm_server_python_interpreter = $HOME.'/.pyenv/versions/neovim/bin/python'
+        let g:ycm_server_python_interpreter = $HOME.'/.pyenv/versions/neovim/bin/python'
 "         let g:ycm_server_keep_logfiles = 1
 "         let g:ycm_server_log_level = 'debug'
     " }}}}
