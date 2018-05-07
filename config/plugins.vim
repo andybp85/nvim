@@ -80,10 +80,11 @@
         call dein#add('bigfish/vim-js-context-coloring', { 'build': 'npm install' })
         call dein#add('pangloss/vim-javascript')
         call dein#add('mxw/vim-jsx')
-        call dein#add('leafgarland/typescript-vim')
+"         call dein#add('leafgarland/typescript-vim')
         call dein#add('HerringtonDarkholme/yats.vim')
         call dein#add('Shougo/vimproc.vim', {'build': 'make'})
-        call dein#add('Quramy/tsuquyomi')
+"         call dein#add('Quramy/tsuquyomi')
+        call dein#add('mhartington/nvim-typescript')
         call dein#add('purescript-contrib/purescript-vim')
     " }}}}}
 
