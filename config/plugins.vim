@@ -91,6 +91,7 @@
         call dein#add('othree/html5.vim')
         call dein#add('plasticboy/vim-markdown')
         call dein#add('gregsexton/MatchTag')
+        call dein#add('shmargum/vim-sass-colors')
     " }}}}}
 
     " PHP {{{{{
