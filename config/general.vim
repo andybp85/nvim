@@ -133,10 +133,11 @@
 
     " easier write/quit
     nmap <leader>w :w!<cr>
-    nmap <leader>q :q<cr><Paste>
-    nmap <leader>wq :wq<cr><Paste>
-    nmap <leader>qa :qa<cr><Paste>
-    nmap <leader>wqa :wqa<cr><Paste>
+    nmap <leader>q :q<cr>
+    nmap <leader>wa :wa<cr>
+    nmap <leader>wq :wq<cr>
+    nmap <leader>qa :qa<cr>
+    nmap <leader>wqa :wqa<cr>
 
     nmap <silent> <leader>tt :TrailerTrim<CR>
     nmap <silent> <leader>TT :TagbarToggle<CR>

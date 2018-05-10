@@ -15,7 +15,12 @@
 " }}}}
 
 " text editing {{{{
-    call dein#add('scrooloose/nerdcommenter')
+    call dein#add('scrooloose/nerdcommenter') " {{{{{
+            let g:NERDSpaceDelims = 1
+            let g:NERDCompactSexyComs = 1
+            let g:NERDTrimTrailingWhitespace = 1
+            let g:NERDDefaultAlign = "left"
+        " }}}}}
     call dein#add('godlygeek/tabular') " quickly align code
     call dein#add('csexton/trailertrash.vim') " trim whitespace
     call dein#add('dominika/vim-todos')
@@ -75,6 +80,10 @@
         call dein#add('claco/jasmine.vim')
         call dein#add('othree/javascript-libraries-syntax.vim')
         call dein#add('burnettk/vim-angular')
+        call dein#add('Quramy/vim-js-pretty-template') " {{{{{
+                autocmd FileType typescript JsPreTmpl html
+                " autocmd FileType typescript syn clear foldBraces
+            " }}}}}
         " call dein#add('alexlafroscia/vim-ember-cli')
         call dein#add('neovim/node-host')
         call dein#add('bigfish/vim-js-context-coloring', { 'build': 'npm install' })
@@ -84,7 +93,9 @@
         call dein#add('HerringtonDarkholme/yats.vim')
         call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 "         call dein#add('Quramy/tsuquyomi')
-        call dein#add('mhartington/nvim-typescript')
+        call dein#add('mhartington/nvim-typescript') " {{{{{
+                let g:nvim_typescript#type_info_on_hold = 1
+            "}}}}}
         call dein#add('purescript-contrib/purescript-vim')
     " }}}}}
 
@@ -93,6 +104,7 @@
         call dein#add('plasticboy/vim-markdown')
         call dein#add('gregsexton/MatchTag')
         call dein#add('shmargum/vim-sass-colors')
+        call dein#add('styled-components/stylelint-processor-styled-components')
     " }}}}}
 
     " PHP {{{{{

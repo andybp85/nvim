@@ -2,10 +2,6 @@
     "disable auto commenting
     autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-    let g:NERDSpaceDelims = 1
-    let g:NERDCompactSexyComs = 1
-    let g:NERDTrimTrailingWhitespace = 1
-    let g:NERDDefaultAlign = "start"
 " }}}}
 
 " insert single char {{{{
