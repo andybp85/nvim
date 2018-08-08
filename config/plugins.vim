@@ -72,6 +72,7 @@
     call dein#add('SirVer/ultisnips') " snippits, integrates with YCM
     call dein#add('honza/vim-snippets') " code for snippets
     call dein#add('severin-lemaignan/vim-minimap')
+    call dein#add('airblade/vim-gitgutter')
 " }}}}
 
 " lang-specific {{{{

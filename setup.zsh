@@ -26,6 +26,7 @@ if [[ ! -f $HOME/.config/nvim/repos/github.com/Valloric/YouCompleteMe/.ycm_extra
 fi
 
 nvim +"call dein#install()" +qall
+nvim +"UpdateRemotePlugins"
 
 pyenv deactivate
 
