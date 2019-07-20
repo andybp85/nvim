@@ -145,6 +145,7 @@
         call dein#add('ElmCast/elm-vim')
         call dein#add('daveyarwood/vim-alda')
         call dein#add('chrisbra/csv.vim')
+        call dein#add('rust-lang/rust.vim')
     " }}}}}
 
 " }}}}
