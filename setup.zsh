@@ -1,6 +1,7 @@
 #!/bin/zsh
 
-# python3 must be installed via pyenv with PYTHON_CONFIGURE_OPTS="--enable-framework"
+# MAC OS: python3 must be installed via pyenv with PYTHON_CONFIGURE_OPTS="--enable-framework"
+# Linux: python3 must be installed via pyenv with PYTHON_CONFIGURE_OPTS="--enable-shared"
 if [[ ! -d $(pyenv root)/plugins/pyenv-virtualenv ]]; then
     git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 fi
